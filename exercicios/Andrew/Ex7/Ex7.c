@@ -12,7 +12,16 @@ float media(int w=1,float nm=0.0) {
     n = n + nm;    
     w++;
     n = n / 7;
-return n;
+    printf ("A média do aluno foi de:%f",n);
+     return n;
+}
+
+float trabalho(float t=0,float tp=0.0,float tn=0.0) {
+    system("clear");
+    printf("Você deu algum trabalho?\n");
+    scanf("%f",&t);
+    printf("%s\n", );
+     return n;
 }
 
 int main() {
@@ -20,8 +29,8 @@ int main() {
     scanf("%d",&provas);
     provas++;
     system("clear");
+    trabalho();
     media();
-    printf ("A média do aluno foi de:%f\n",n);
     
 }
 
