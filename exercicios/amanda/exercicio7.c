@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /*
-	7 - Condicional – Escreva um programa que leia via teclado 3 notas de um aluno e a média das notas dos exercícios realizados por ele. Calcular a média de aproveitamento, usando a fórmula: 
+	7 - Condicional – Escreva um programa que leia via teclado 3 notas de um aluno e a média das notas dos exercícios realizados por ele. 
+	Calcular a média de aproveitamento, usando a fórmula: 
 	MA = (N1 + N2*2 + N3*3 + ME)/7. 
 	A partir da média, informar o conceito de acordo com a tabela
 */
@@ -16,11 +17,11 @@ int main(){
 	printf("Escreva a terceira nota: ");
 	scanf("%f", &N3);
 	printf("Escreva a média das notas dos exercícios\n");
-	scanf("%f", &ME)
+	scanf("%f", &ME);
 
 	MA = (N1 + N2*2 + N3*3 + ME)/7;
 
-	printf("Sua média de aproveitamento é:\n ", MA);
+	printf("Sua média de aproveitamento é: %.2f \n ", MA);
 
 	if (MA >= 9)
 		printf("Conceito A\n", MA);
