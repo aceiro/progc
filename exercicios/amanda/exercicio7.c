@@ -24,16 +24,17 @@ int main(){
 
 	printf("Sua média de aproveitamento é: %.1f \n ", MA);
 
-	if (MA >= 9)
-		printf("Conceito A\n", MA);
-	else if (MA >= 7.5 && MA < 9)
-		printf("Conceito B\n", MA);
-	else if (MA >= 6 && MA < 7.5)
-		printf("Conceito C\n", MA);
-	else if (MA >= 4 && MA < 6)
-		printf("Conceito D\n", MA);
-	else
-		printf("Conceito E\n", MA);
+	if (MA >= 9) {
+		printf("Conceito A %.1f\n", MA);
+	} else if (MA >= 7.5 && MA < 9) {
+		printf("Conceito B %.1f\n", MA);
+	} else if (MA >= 6 && MA < 7.5) {
+		printf("Conceito C %.1f\n", MA);
+	} else if (MA >= 4 && MA < 6) {
+		printf("Conceito D %.1f\n", MA);
+	} else {
+		printf("Conceito E %.1f\n", MA);
+	}
 	
 	return 0;
 
