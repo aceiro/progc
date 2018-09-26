@@ -2,13 +2,11 @@
 
 int main (){
 	int a = 3;
-	float b = 4.5;
-	double c = 5.25;
-	float sum;
+	float b = 4.5F; //em decimal de precisão simples
+	double c = 5.25F; //em decimal de precisão dupla
+	
+	float sum = a + b + c;
 
-	sum = (a + b + c);
-
-
-	printf("%3.2f\n", sum);
+	printf("Sum %3.2f\n", sum);
 
 }
