@@ -1,69 +1,39 @@
-#include <stdio.h>
+﻿#include <stdio.h>
+int main()
+{
 
-float n=0.0;
-int provas=0;
-float tp=0.0;
-float tn=0.0;
-int t = 2;
+	float nm = 0;
 
-float media() {
-    int w=1;
-    float nm=0.0;
-    system("clear");
-    if (t = 1) {
-    while (w < provas) {
+	float me = 0;
+	float ma = 0;
+	int provas = 3;
+	int w = 1;
+
+while (w < provas+1) {
     printf("Insira a nota da %dº prova.\n",w);
     scanf("%f",&nm);
     nm = nm * w;
-    n = n + nm;    
+    ma = ma + nm; 
     w++;
     }
-    tn = tn * tp;
-    n = n + tn;
-    n = n / 7;
-    printf ("A média do aluno foi de:%f",n);
-    return n;
-    }
-    if (t = 0) {
-    while (w < provas) {
-    printf("Insira a nota da %dº prova.\n",w);
-    scanf("%f",&nm);
-    nm = nm * w;
-    n = n + nm;    
-    w++;
-    }
-    n = n + 10;
-    printf ("A média do aluno foi de:%f",n);
-    return n;
-    }
-}
+    printf("Entre com a Média de Notas Exercícios: ");
+	scanf("%f", &me);
+    ma = ma + me;  
+    ma = ma / 7;  
 
-float trabalho() {
-    system("clear");
-    printf("Você deu algum trabalho?\n Digite 1 para sim e 0 para não.\n");
-    scanf("%d",&t);
-    if (t = 1) {
-    printf("Seu trabalho tem qual peso na média?\n");
-    scanf("%f",&tp);
-    printf("Qual foi a nota do aluno no trabalho?\n");
-    scanf("%f",&tn);
-    media();
-     return n;
-    }else if (t = 0) {
-    printf("Você não deu um trabalho.");
-    return t;
-    }else {
-        printf("Erro desconhecido, por favor contate o criador.\n");
-    }
-}
+	if (ma >= 9)
+		printf("Média Acumulada é %2.1f\tConceito A\n", ma);
+	else if (ma >= 7.5 && ma < 9)
+		printf("Média Acumulada é %2.1f\tConceito B\n", ma);
+	else if (ma >= 6 && ma < 7.5)
+		printf("Média Acumulada é %2.1f\tConceito C\n", ma);
+	else if (ma >= 4 && ma < 6)
+		printf("Média Acumulada é %2.1f\tConceito D\n", ma);
+	else
+		printf("Média Acumulada é %2.1f\tConceito E\n", ma);
+	
+	return 0;
 
-int main() {
-    printf("Este programa calcula a media do aluno, quantas provas você deu?\n");
-    scanf("%d",&provas);
-    provas++;
-    system("clear");
-    trabalho();    
 }
-
-/*clear;gcc Ex7.c -o Ex7.out;./Ex7.out*/
+		
 
