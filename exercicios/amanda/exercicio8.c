@@ -11,24 +11,26 @@ Faça um programa em C para ler os seguintes dados via teclado de uma pessoa:
 -Cidade
 -Salário
 */
+#define MAX_NOME 50
 
 int main() {
-	char nome[31], end, cidade;
+	char nome[MAX_NOME], end[100], cidade[20];
 	int cep, tel, idade, filhos, salario;
 
 	printf("Qual é o seu nome?\n");
-	scanf("%s", nome);
+	scanf("%s", nome); /*sem o &*/
+
 	printf("Qual é o seu Endereço?\n");
-	scanf(" %d", &end);
-	printf("Qual é o seu CEP?\n");
-	scanf("%i", &cep);
-	printf("Qual é o seu número de Telefone?\n");
-	scanf("%i", &tel);
+	scanf("%s", end);
+
+	printf("Qual é a sua cidade?\n");
+	scanf("%s", cidade);
+	
 
 	printf("Nome: %s\n", nome);
-	printf("Endereço: %d\n", end);
-	printf("CEP: %i\n", cep );
-	printf("Endereço: %i\n", tel );
+	printf("Endereço: %s\n", end);
+	printf("Cidade: %s\n", cidade);
+	
 
 	return 0;
 }
