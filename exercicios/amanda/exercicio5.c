@@ -8,7 +8,7 @@ int main()
     if ( foo>bar ){
     	printf("Foo é maior que bar!");
     }else (bar>foo){
-    		printf("Bar é maior que foo");
+    	printf("Bar é maior que foo");
     }
 
 }
