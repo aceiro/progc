@@ -1,2 +1,0 @@
-#include <stdio>
-int main()
