@@ -25,6 +25,7 @@ int main (){
 			
 	printf("Informe o preço de fábrica do automóvel: \n");
 	scanf("%f", &precoF);
+	fflush(stdin);
 	
 	printf("\n Informe o nome do veículo: \n");
 	fgets(nomeAuto, sizeof(nomeAuto), stdin);
