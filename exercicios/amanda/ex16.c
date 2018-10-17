@@ -28,7 +28,7 @@ int main() {
 
 	if ((numero = 1) && (numero = 2)) {
 		printf("Você não pode dirigir na Segunda-Feira\n");
-	} else if ((numero = 3) && (numero < 4)) {
+	} else if ((numero = 3) && (numero = 4)) {
 		printf("Você não pode dirigir na Terça-Feira\n");
 	} else if ((numero = 5) && (numero = 6)) {
 		printf("Você não pode dirigir na Quarta-Feira\n");
