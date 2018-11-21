@@ -15,8 +15,10 @@ int main()
 
 	if(A+B < C){
 		printf("A soma de A + B é menor que C.\n");
-	} else {
+	} else if {
 		printf("A soma de A + B é maior que C.\n");
+	} else {
+		printf("A soma de A + B é igual a C.\n");
 	}
 	
 	return 0;
