@@ -4,15 +4,13 @@ Use uma rotina recursiva para iterar até o final do vetor*/
 
 
 #include <stdio.h>
-
 #define VETOR 10
 
 int main(){
 	int dec[VETOR], n;
 	int count = 0;
-	int q[80], r[80];
-	int i,j,bin;
-
+	int i;
+	int r[80];
 
 	while (count < VETOR){
 		printf("Digite 10 números inteiros para transformá-los em binários: ");
@@ -26,18 +24,23 @@ int main(){
 
  		else {
  			printf("Forma binária: ");
+ 			
  			i = 0;
+ 			
   			do {
-			r[i] = (n % 2);
-			printf("%d", r[i]);
-			n = n / 2;
-			i++;
-			
+    			r[i] = (n % 2);
+    			n = n / 2;
+    			i++;
 			} while(n >= 1);
-				printf("\n");
+			
+			for(int l = i-1; l >= 0; l--)
+			{
+			    printf("%d", r[l]);
 			}
+				
+	    	printf("\n");
+		}
 
- 		}
+ 	}
 }
-
 		
