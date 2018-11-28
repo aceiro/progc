@@ -2,7 +2,7 @@
 
 int somaPares(int num){
     if (num % 2 == 0){
-        return num + somaPares();
+        return num + somaPares(num);
       }
       else{
         return 1;
@@ -11,14 +11,16 @@ int somaPares(int num){
 
 int main(){
 
-printf("\tSoma dos números pares até 100\n");
+printf("\tSoma dos números pares menores que 100\n");
 
-int cont;
+int num;
+//int cont;
 int result;
 
-for (cont = 1; cont <100; cont++)
+for (num = 0; num <100; num++){
 
-result = somaPares(num);
+result = num + somaPares(num);
    printf("\nA soma total é de: %d", result);
+   }
 return 0;
 }
