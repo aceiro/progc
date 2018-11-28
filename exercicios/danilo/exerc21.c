@@ -36,9 +36,11 @@ int main (){
 
 	printf("\nInforme o cargo do funcionário\n");
 	fgets(cargo, sizeof(cargo), stdin);
+	fflush(stdin);
 
 	printf("\nInforme o salário bruto desse funcionário\n");
 	scanf("%f", &salb);
+	fflush(stdin);
 
 	reaj = reajSal(salb);
 	grat = gratificacao(salb, reaj);
