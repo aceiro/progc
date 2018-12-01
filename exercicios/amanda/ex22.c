@@ -6,21 +6,21 @@ b) Imprima quantos foram fabricados antes de 1990 e o percentual em relação ao
 c) Imprima quantos são "GOL" e o percentual em relação ao total.*/
 
 #include <stdio.h>
+#include <string.h>
 
 #define MAX_VEICULOS 10
 
 int main(){
 	
-	int ano, quantidade_veiculos;
+	int ano, quantidade_veiculos, total;
 	char veiculo[15];
-	char placa[8];
+	char placa[10];
 	char cor[15];
 	int aux = 0;
-	int count_veiculo = 0;
-	int count_ano = 0;
-	int count_placa = 0;
-	int count_cor = 0;
-    
+	char cor_verde[] = "verde";
+	char carro_gol[] = "gol";
+	float count_verde, count_ano_anterior, count_gol = 0;
+	float total_veiculos_verdes;	
 
 	printf("**********************************************\n");
 	printf("********** Questionário de veículos **********\n");
@@ -39,29 +39,35 @@ int main(){
 		    printf("Qual o modelo do veículo %i?\n", aux);
 		    scanf("%[^\n]s", veiculo);
 		    setbuf(stdin, NULL);
-		    count_veiculo++;
+		    	if(strcmp(veiculo, carro_gol) == 0){
+		    		count_gol++;
+		    	}
 
 		    printf("Qual é a cor do veículo %i?\n", aux);
 		    scanf("%[^\n]s", cor);
 		    setbuf(stdin, NULL);
-		    	if(strcmp(cor, "Verde")){
-		    		count_cor++;
+		    	if(strcmp(cor, cor_verde) == 0){
+		    		count_verde++;
 				}
 		    
 		    printf("Qual o ano de fabricação do veículo %i?\n", aux);
 		    scanf("%i", &ano);
 		    setbuf(stdin, NULL);
-		    count_ano++;
+		    	if(ano <= 1990){
+		    		count_ano_anterior++;
+		    	}
+		    
 		    
 		    printf("Qual é a placa do veículo %i?\n", aux);
 		    fgets(placa, sizeof(placa), stdin);
+		    setbuf(stdin, NULL);
 		    printf("\n");
-		    count_placa++;
+		    
 		}
 	}
 
-	printf("Quantidade de verdes: %i\n", count_cor);
-
-
+	printf("%.2f%% dos veículos são verdes. \n", ((count_verde/quantidade_veiculos)*100));
+	printf("%.2f%% dos veículos foram fabricados antes de 1990. \n", ((count_ano_anterior/quantidade_veiculos)*100));
+	printf("%.2f%% dos veículos são do modelo Gol. \n", ((count_gol/quantidade_veiculos)*100));
 	
 }
