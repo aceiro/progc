@@ -3,6 +3,7 @@
  *	triângulos. Todos os valores devem ser lidos via arquivo através do
  *	redireciomento interno. (Usando leitura de um arquivo Arquivo, e baseando
  *	no programa de ATM).
+ *	necessário arquivo exerciocio24_sides.txt para leitura dos catetos.
  * 
 */
 

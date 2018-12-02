@@ -9,7 +9,7 @@
 3 4
 5 6.5
 -----------------
-Para testar o programa, voce poderá mudar valores acima.
+Para testar o programa (exercicio24_fp.c) , voce poderá mudar valores acima.
 O Programa le apenas as 2 primeira colunas, logo faca:
 numero <espaco> numero <enter>
 exemplo: 
