@@ -34,7 +34,7 @@ int main() {
 	}
 
 	while (count < NUMBER_HYPOTENUSE) {
-		(fgets(buffer, sizeof(buffer), fp_sides));
+		fgets(buffer, sizeof(buffer), fp_sides);
         get_values(buffer);
 		accumulator += hypotenuse_calculator(side_a, side_b);
 		count++;
