@@ -1,4 +1,8 @@
 /*
+ *  *****************************************************
+ *  USANDO O EXERCÍCIO 5 DA PROVA (TEM O MESMO ENUNCIADO)
+ *  *****************************************************
+ * 
  *  Programa verificar se uma palavra e um Palindromo: uma palavra
  *  que se pode ler, indiferentemente, da esquerda para direita ou
  *  vice-versa.
