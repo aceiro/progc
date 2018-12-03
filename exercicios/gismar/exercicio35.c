@@ -5,7 +5,7 @@
  *	rotina deve encontrar o valor do nome dentro do vetor e retornar tanto o nome quanto
  *	a posiao do vetor. Em caso de não encontrar deve ser exibida a mensagem que não
  *	foi encontrado.
- * 
+ * 	Necessário arquivo exercicio35_file_names.txt
  * 
 */
 

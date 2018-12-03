@@ -99,4 +99,5 @@ Lisboa Filho
 Lisboa Neto
 Aristoteles
 -----------------------------------------------------------------------------
-Programa lerá apenas 100 nomes ou seja, até o último nome aqui acima
+Programa lerá apenas 100 nomes ou seja, até o último nome aqui acima.
+Para testar o programa (exercicio35.c) , voce poderá mudar valores acima.
