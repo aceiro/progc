@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-/*int fibo (int num){
-	if (num >= cont)
+int fibo (int num){
+	if (num == 1 || num == 2)
 	{
-		return num + fibo(num+1);
-	}
-	else{
 		return 1;
 	}
-}*/
+	else{
+		return fibo(num - 1) + fibo(num - 2);
+	}
+}
 
 int main (){
 
@@ -19,10 +19,11 @@ int main (){
 	printf("\n\tSEQUÊNCIA FIBONACCI\n");
 	printf("Informe um número referente a última posição que você queira da sequência\n");
 	scanf("%d", &num);
-	fbnc = num + num++;
-	
-	for(cont = 0; cont <= num; cont++){
-	printf("Sequência: %d\n", fbnc);
+
+
+	for(cont = 0; cont < num; cont++){
+            fbnc = fibo(cont+1);
+	printf("%d ", fbnc);
 }
 
 	return 0;

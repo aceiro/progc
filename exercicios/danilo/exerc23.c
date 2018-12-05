@@ -14,12 +14,12 @@ int main(){
 printf("\tSoma dos números pares menores que 100\n");
 
 int num;
-//int cont;
+int cont = 0;
 int result;
 
-for (num = 0; num <100; num++){
+for (cont = 0; cont <100; cont++){
 
-result = num + somaPares(num);
+result = num + somaPares(num % 2 == 0);
    printf("\nA soma total é de: %d", result);
    }
 return 0;

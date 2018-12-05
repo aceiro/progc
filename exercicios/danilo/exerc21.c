@@ -29,18 +29,19 @@ int main (){
 	printf("\n\tReajuste salarial de funcionários\n");
 	printf("\nInforme o nome do funcionário\n");
 	fgets(nome, sizeof(nome), stdin);
+	setbuf(stdin, NULL);
 
 	printf("\nInforme a idade do funcionário\n");
 	scanf("%d", &idade);
-	fflush(stdin);
+	setbuf(stdin, NULL);
 
 	printf("\nInforme o cargo do funcionário\n");
 	fgets(cargo, sizeof(cargo), stdin);
-	fflush(stdin);
+	setbuf(stdin, NULL);
 
 	printf("\nInforme o salário bruto desse funcionário\n");
 	scanf("%f", &salb);
-	fflush(stdin);
+	setbuf(stdin, NULL);
 
 	reaj = reajSal(salb);
 	grat = gratificacao(salb, reaj);
